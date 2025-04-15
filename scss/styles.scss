@@ -848,11 +848,15 @@ footer {
 .project-image {
     flex: 0 0 200px;
     margin-right: 20px;
+    max-height: 180px;
+    display: flex;
+    align-items: center;
 
     img {
         width: 100%;
         height: auto;
-        display: block;
+        max-height: 100%;
+        object-fit: contain;
     }
 }
 
