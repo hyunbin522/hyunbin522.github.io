@@ -851,12 +851,14 @@ footer {
     max-height: 180px;
     display: flex;
     align-items: center;
+    justify-content: center;
 
     img {
         width: 100%;
-        height: auto;
-        max-height: 100%;
-        object-fit: contain;
+        max-height: 180px;
+        width: auto;         // 너비 비율 유지
+        height: auto;        // 높이 비율 유지
+        object-fit: contain; // 비율 유지하며 최대한 채움
         display: block;
     }
 }
